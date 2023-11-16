@@ -1,7 +1,6 @@
 import Avatar from "@mui/material/Avatar";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
@@ -21,6 +20,7 @@ import "./bootstrap.css";
 import "./Login.css";
 import Logo from "./Group91.png";
 import { FaSignInAlt} from 'react-icons/fa';
+import { Outlet, Link } from "react-router-dom";
 
 const defaultTheme = createTheme();
 
@@ -190,7 +190,7 @@ export default function Login() {
                     <div style={{paddingTop:'20px',paddingLeft:'25px',fontSize:'18px'}}>
                       {"Don't have an account?"}  
                     </div>
-                  <Link to={"/signup"} variant="body2" >
+                    <Link to={'/signup'} className="">
                      <button className="btn1 btn-1 mt-3">REGISTER NOW</button>
                   </Link>
                 </div>
