@@ -190,7 +190,7 @@ export default function Login() {
                     <div style={{paddingTop:'20px',paddingLeft:'25px',fontSize:'18px'}}>
                       {"Don't have an account?"}  
                     </div>
-                  <Link to="/signup" variant="body2" >
+                  <Link to={"/signup"} variant="body2" >
                      <button className="btn1 btn-1 mt-3">REGISTER NOW</button>
                   </Link>
                 </div>
