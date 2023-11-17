@@ -1,7 +1,7 @@
 import Avatar from "@mui/material/Avatar";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import Link from "@mui/material/Link";
+// import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
@@ -21,8 +21,9 @@ import "./bootstrap.css";
 import "./Signup.css";
 import Logo from "./Group91.png";
 import { FaUser} from 'react-icons/fa';
-const defaultTheme = createTheme();
+import { Outlet, Link } from "react-router-dom";
 
+const defaultTheme = createTheme();
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
@@ -116,7 +117,9 @@ export default function SignUp() {
       <div className="row">
         <div className="col-6 ImageLogin">
           <div className="EventWhizlogo">
-            <img src={Logo} alt="" />
+            <Link to={'/'} className="">
+              <img src={Logo} alt="" />
+            </Link>
           </div>
           <div className="LoginText">
             To Continue,
