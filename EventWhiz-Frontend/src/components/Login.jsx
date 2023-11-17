@@ -91,8 +91,10 @@ export default function Login() {
       <div className="LoginWholeBody container-fluid">
       <div className="row">
         <div className="col-6 ImageLogin">
-          <div className="EventWhizlogo logo">
-            <img src={Logo} alt="" />
+          <div className="EventWhizlogo">
+            <Link to={'/'} className="">
+              <img src={Logo} alt="" />
+            </Link>
           </div>
           <div className="LoginText">
             To Continue,
